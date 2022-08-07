@@ -1,0 +1,24 @@
+2022-04-16 23:21:28.508 febs [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-04-16 23:27:31.763 febs [http-nio-8080-exec-2] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:27:46.468 febs [http-nio-8080-exec-3] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:30:51.607 febs [http-nio-8080-exec-5] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:30:57.573 febs [http-nio-8080-exec-6] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:31:22.586 febs [http-nio-8080-exec-7] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:32:58.062 febs [http-nio-8080-exec-8] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:40:57.002 febs [http-nio-8080-exec-1] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:48:16.219 febs [http-nio-8080-exec-3] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:48:41.175 febs [http-nio-8080-exec-1] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====
+2022-04-16 23:53:01.584 febs [http-nio-8080-exec-3] ERROR c.j.t.t.s.impl.FileServiceImpl - FileServiceImpl 赋值方法有error | inser方法出错 =====

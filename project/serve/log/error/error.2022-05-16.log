@@ -1,0 +1,20 @@
+2022-05-16 09:15:56.310 febs [http-nio-8080-exec-6] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件共享 errjava.lang.NullPointerException
+2022-05-16 09:17:24.462 febs [http-nio-8080-exec-9] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件共享 errjava.lang.NullPointerException
+2022-05-16 09:17:46.069 febs [http-nio-8080-exec-3] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件共享 errjava.lang.NullPointerException
+2022-05-16 09:25:25.030 febs [http-nio-8080-exec-8] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件共享 errjava.lang.NullPointerException
+2022-05-16 09:27:34.563 febs [http-nio-8080-exec-1] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件共享 errjava.lang.NullPointerException
+2022-05-16 09:31:38.391 febs [http-nio-8080-exec-5] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件 复制NG java.io.FileNotFoundException: E:\VirtaulDisk\shareArea\承诺书(居住地安镇人员.docx (拒绝访问。)
+2022-05-16 09:31:38.391 febs [http-nio-8080-exec-5] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件共享 errjava.lang.NullPointerException
+2022-05-16 09:46:50.504 febs [http-nio-8080-exec-7] ERROR c.j.t.t.controller.FileController - fileService 调用java.lang.NullPointerException
+2022-05-16 09:47:09.147 febs [http-nio-8080-exec-10] ERROR c.j.t.t.controller.FileController - fileService 调用java.lang.NullPointerException
+2022-05-16 09:49:03.626 febs [http-nio-8080-exec-2] ERROR c.j.t.t.controller.FileController - fileService 调用java.lang.NullPointerException
+2022-05-16 10:30:22.260 febs [http-nio-8080-exec-5] ERROR c.j.t.t.controller.FileController - fileService 调用 :java.lang.NullPointerException
+2022-05-16 10:32:22.023 febs [http-nio-8080-exec-2] ERROR c.j.t.t.controller.FileController - fileService 调用 :java.lang.NullPointerException
+2022-05-16 10:36:53.909 febs [http-nio-8080-exec-10] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件 复制NG java.io.FileNotFoundException: E:\VirtaulDisk\shareArea\SpringBoot-jpa.rtf (拒绝访问。)
+2022-05-16 10:36:53.909 febs [http-nio-8080-exec-10] ERROR c.j.t.t.s.impl.FileServiceImpl - 文件共享 errjava.lang.NullPointerException
+2022-05-16 11:05:06.581 febs [http-nio-8080-exec-9] ERROR c.j.t.t.controller.FileController - fileService 调用 :java.lang.NullPointerException
+2022-05-16 12:53:08.645 febs [http-nio-8080-exec-7] ERROR c.j.t.t.controller.FileController - fileService 调用 :java.lang.NullPointerException
+2022-05-16 13:17:09.528 febs [http-nio-8080-exec-7] ERROR c.j.t.t.controller.FileController - fileService 调用 :java.lang.NullPointerException
+2022-05-16 13:17:50.465 febs [http-nio-8080-exec-4] ERROR c.j.t.t.controller.FileController - fileService 调用 :java.lang.NullPointerException
+2022-05-16 13:18:42.064 febs [http-nio-8080-exec-3] ERROR c.j.t.t.controller.FileController - fileService 调用 :java.lang.NullPointerException
+2022-05-16 13:19:23.576 febs [http-nio-8080-exec-7] ERROR c.j.t.t.controller.FileController - fileService 调用 :java.lang.NullPointerException

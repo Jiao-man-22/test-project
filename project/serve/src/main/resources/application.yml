@@ -1,0 +1,42 @@
+server:
+  port: 8083
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    #单位毫秒
+    connect-timeout: 3000
+    database: 0
+    # 配置lettuce
+    lettuce:
+      pool:
+        # 连接池中的最小空闲连接
+        min-idle: 1
+        # 连接池中的最大空闲连接
+        max-idle: 6
+        # 连接池最大连接数（使用负值表示没有限制,不要配置过大，否则可能会影响redis的性能）
+        max-active: 10
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）；单位毫秒
+        max-wait: 1000
+      #关闭超时时间；单位毫秒
+      shutdown-timeout: 200
+
+  #数据源
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/testdatabase?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+      hibernate:
+        #     更新或者创建数据表结构
+        ddl-auto: update
+      #    控制台显示SQL
+      show-sql: true
+
+mybatis:
+  type-aliases-package: com.jiao.testproject.testproject.entity
+  mapper-locations: classpath:mapper/*.xml

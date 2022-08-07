@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiao.testproject.testproject.dao.UserDao">
+    <!--结果集映射-->
+    <resultMap type="PermissionEntity" id="FunctionResult">
+        <id     property="permission_id"        column="permission_id"      />
+        <result property="role"                 column="role"    />
+        <result property="function"             column="function"     />
+        <result property="pid"                  column="pid"   />
+        <result property="update_time"          column="update_time"    />
+    </resultMap>
+
+
+
+
+    <!--动态两表联查 根据role 查出所要的权限-->
+    <select id="selectFunctions" parameterType="java.lang.Integer" resultType="java.lang.String">
+        SELECT
+            distinct function_table.FUNCTION
+        FROM
+             function_table
+                INNER JOIN USER ON function_table.role = `user`.role
+                where  function_table.role = #{role}
+    </select>
+
+
+
+
+
+
+</mapper>

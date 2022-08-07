@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d076cab5-1e9d-4598-b982-07027364fbec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/dao/FileEntityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/exception/ResultBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/generator/MySQLGeneratorPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/log/info/info.2022-04-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/log/info/info.2022-04-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/log/info/info.2022-04-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serve/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/TestProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/TestProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/dao/FileEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/dao/FileEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/entity/FileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/entity/FileEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/entity/FileEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/entity/FileEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/exception/FileNameLengthLimitExceededException.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/exception/FileNameLengthLimitExceededException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/services/IFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/services/IFileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/services/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/services/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/services/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/services/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/DataStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/FieldTranfUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/FieldTranfUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/Session.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/SpringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/SpringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/TreeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/TreeDataUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/java/com/jiao/testproject/testproject/utils/TreeDataUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/resources/com/jiao/testproject/testproject/dao/FileEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/resources/mapper/FileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/resources/img/FileMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/resources/mapper_1/FileEntityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/resources/mapper/FileEntityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/resources/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/main/resources/mybatis/mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/main/resources/mybatis/mybatis-generator-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/src/test/java/com/jiao/testproject/testproject/TestProjectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/serve/src/test/java/com/jiao/testproject/testproject/TestProjectApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/serve" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven_repositories" />
+        <option name="userSettingsFile" value="D:\Java\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2AV6IbEy9CIvO6pNdnDtFx0GtCj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/serve" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d076cab5-1e9d-4598-b982-07027364fbec" name="Changes" comment="" />
+      <created>1655082326871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655082326871</updated>
+      <workItem from="1655082328530" duration="36000" />
+      <workItem from="1655082407620" duration="94000" />
+      <workItem from="1656464181570" duration="229000" />
+      <workItem from="1657506248460" duration="5000" />
+      <workItem from="1658284054283" duration="1980000" />
+      <workItem from="1658892034098" duration="175000" />
+      <workItem from="1659589315579" duration="41000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
