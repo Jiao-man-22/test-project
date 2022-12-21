@@ -12,6 +12,22 @@
         <result property="update_time"          column="update_time"    />
     </resultMap>
 
+    <select id="getUserPession">
+        SELECT
+            role.user_role,
+            role.role_code
+
+        FROM
+            USER INNER JOIN role ON USER.role_code = role.role_code
+        WHERE
+            USER.user_id = ''
+        GROUP BY
+            role.user_role,
+            role.role_code
+        ORDER BY
+            role.user_role ASC
+    </select>
+
 
 
 

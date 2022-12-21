@@ -1,5 +1,6 @@
 package com.jiao.testproject.testproject;
 
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.apache.catalina.connector.Connector;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,14 +14,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.persistence.EntityManager;
+import java.util.concurrent.CountDownLatch;
 
 @EnableTransactionManagement
 @SpringBootApplication
 @EnableConfigurationProperties
+@EnableDubbo(scanBasePackages = {"com.jiao.testproject.testproject.services"})
 public class TestProjectApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         SpringApplication.run(TestProjectApplication.class, args);
+        System.out.println("dubbo service started");
+        new CountDownLatch(1).await();
     }
 
     @Bean

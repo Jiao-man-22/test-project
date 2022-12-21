@@ -2,10 +2,6 @@ server:
   port: 8083
 
 spring:
-  #依赖循环引用是不鼓励的，默认情况下是禁止的。更新应用程序以删除bean之间的依赖循环。
-  #作为最后的手段，可以通过设置spring.main来自动打破循环。allow-circular-references为true。
-  main:
-    allow-circular-references: true
   redis:
     host: 127.0.0.1
     port: 6379
@@ -28,15 +24,15 @@ spring:
       shutdown-timeout: 200
 
   # mq 配置
-  #  rabbitmq:
-  #    addresses:
-  #    stream:
-  #      username:
-  #      password:
-  #    virtual-host:
-  #    connection-timeout:
-  #    publisher-confirm-type: correlated
-  #    publisher-returns: true
+#  rabbitmq:
+#    addresses:
+#    stream:
+#      username:
+#      password:
+#    virtual-host:
+#    connection-timeout:
+#    publisher-confirm-type: correlated
+#    publisher-returns: true
 
 
   #数据源
@@ -86,3 +82,26 @@ mybatis-plus:
     field-strategy: 2
     #驼峰下划线转换
     db-column-underline: true
+    #mp2.3+ 全局表前缀 mp_
+    #table-prefix: mp_
+    #刷新mapper 调试神器
+    #refresh-mapper: true
+    #数据库大写下划线转换
+    #capital-mode: true
+    # Sequence序列接口实现类配置
+    key-generator: com.baomidou.mybatisplus.incrementer.OracleKeyGenerator
+    #逻辑删除配置（下面3个配置）
+    logic-delete-value: 1
+    logic-not-delete-value: 0
+    #sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+    #自定义填充策略接口实现
+    #meta-object-handler: com.baomidou.springboot.MyMetaObjectHandler
+  configuration:
+    #配置返回数据库(column下划线命名&&返回java实体是驼峰命名)，自动匹配无需as（没开启这个，SQL需要写as： select user_id as userId）
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    #配置JdbcTypeForNull, oracle数据库必须配置
+    jdbc-type-for-null: 'null'
+
+
+

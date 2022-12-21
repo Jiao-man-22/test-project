@@ -1,12 +1,16 @@
 package com.jiao.testproject.testproject.controller;
 
+import com.jiao.testproject.testproject.dao.UserDao;
 import com.jiao.testproject.testproject.dto.AjaxResult;
 import com.jiao.testproject.testproject.dto.UserDto;
+import com.jiao.testproject.testproject.dto.pojo.Department;
+import com.jiao.testproject.testproject.dto.pojo.UserRole;
 import com.jiao.testproject.testproject.entity.UserEntity;
 import com.jiao.testproject.testproject.services.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -20,6 +24,8 @@ public class UserController {
     private static final Integer integer_0 = 0;
     private static final Integer integer_1 = 1;
 
+    @Resource
+    private UserDao userDao;
 
     /*查询所有用户*/
     @GetMapping("/getUserAll")
@@ -100,6 +106,19 @@ public class UserController {
         }
         List<String> strings = UserService.selectFunctions(Integer.valueOf(role));
         return AjaxResult.success("成功",strings);
+    }
+
+
+    @GetMapping("/getUserRole")
+    public AjaxResult getUserRole(){
+        UserRole userRoleInfo = UserService.getUserRoleInfo();
+        return AjaxResult.success("成功",userRoleInfo);
+    }
+
+    @GetMapping("/getUserByDepId")
+    public AjaxResult getUserByDepId(){
+        Department departmentInfoAndEmpee = userDao.getDepartmentInfoAndEmpee();
+        return AjaxResult.success("成功",departmentInfoAndEmpee);
     }
 
 }

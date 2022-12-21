@@ -1,10 +1,12 @@
 package com.jiao.testproject.testproject;
+import cn.hutool.core.lang.func.VoidFunc0;
 import com.jiao.testproject.testproject.dao.impl.CustomerCrudRepository;
 import com.jiao.testproject.testproject.dto.FileViewVo;
 import com.jiao.testproject.testproject.dto.FolderDto;
 import com.jiao.testproject.testproject.dto.Node;
 import com.jiao.testproject.testproject.entity.FileEntity;
 import com.jiao.testproject.testproject.test.CasTest;
+import com.jiao.testproject.testproject.test.LambdaQs;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -17,6 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 
@@ -90,8 +93,42 @@ class TestProjectApplicationTests {
 //        HashSet<Object> objects = new HashSet<>();
 
           //testJPACrud();
-        CasTest.testCas();
+  /*      CasTest.testCas();*/
+//        String a = "1";
+//        a = "2";
+//        String b = "1";
+//        Integer c = 1;
+//        Integer d = 1;
+//        int e =1;
+//        int f= 1;
+//        System.out.println(a.hashCode());
+//        System.out.println(b.hashCode());
+//        System.out.println(a.equals(b));
+//        System.out.println(c.hashCode());
+//        System.out.println(d.hashCode());
 
+        /*testJdk8();*/
+//
+//        Cal c=(int a,int b)->{
+//            return a+b;
+//        };
+//        System.out.println(c.add(1,2));
+
+
+        Integer[] arr = {1,null,2,3,null};
+        List<Integer> integers = Arrays.asList(arr);
+        List<Integer> collect = integers.parallelStream().filter(Objects::nonNull).collect(Collectors.toList());
+        /*collect.parallelStream().forEach(out::println);*/
+
+       // System.out.println(false || false);
+
+        List<String> strings = new ArrayList<>();
+        System.out.println(strings.size()+"ready go");
+        if (strings == null || strings.isEmpty()){
+            System.out.println("不合法"+strings.size());
+        }else {
+            System.out.println("go ");
+        }
 
 
     }
@@ -222,6 +259,11 @@ class TestProjectApplicationTests {
         System.out.println("list求积：" + product.get());
         System.out.println("list求和：" + max.get() + "," + max2);
 */
+//        Cal c=(int a,int b)->{
+//            return a+b;
+//        };
+//
+//        System.out.println(c.add(1,2));
     }
 
     void yunsuan(){
@@ -305,6 +347,27 @@ class TestProjectApplicationTests {
         list.stream().forEach(x->{
             System.out.println(x);
         });
+    }
+
+    void testJdk8(){
+        Runnable runnable=() -> System.out.print("Hello Lambda");
+        Runnable runnable_1=() -> System.out.print("Hello Lambda");
+        Runnable runnable_2=() -> System.out.print("Hello Lambda");
+
 
     }
+
+    BinaryOperator<Integer> bo=(x, y)->{
+        System.out.println("这是实现函数式接口的方法");
+        return x+y;
+    };
+
+    interface Cal{
+        int add(int a,int b);
+        int div(int a,int b);
+    }
+
+
+
+
 }
