@@ -6,6 +6,7 @@ import com.jiao.testproject.testproject.dao.UserDao;
 import com.jiao.testproject.testproject.dao.UserRepository;
 import com.jiao.testproject.testproject.dto.FolderDto;
 import com.jiao.testproject.testproject.dto.UserDto;
+import com.jiao.testproject.testproject.dto.pojo.UserRole;
 import com.jiao.testproject.testproject.entity.*;
 import com.jiao.testproject.testproject.entity.QFileEntity;
 import com.jiao.testproject.testproject.entity.QPermissionEntity;
@@ -263,7 +264,6 @@ public class UserServiceImpl implements IUserService {
     @Transactional(readOnly = true)
     public List<String> selectFunctions(Integer role) {
         List<String> functionButton=null;
-        try{
             QUserEntity quserEntity = QUserEntity.userEntity;
             QPermissionEntity qpermissionEntity = QPermissionEntity.permissionEntity;
             functionButton = queryFactory.select(qpermissionEntity.function)
@@ -272,9 +272,6 @@ public class UserServiceImpl implements IUserService {
                     .fetch().stream().distinct().collect(Collectors.toList());
             //反序
             Collections.reverse(functionButton);
-        }catch (Exception e){
-            log.error("自定义查询 dao " + e + "" );
-        }
         return functionButton;
     }
 
@@ -282,4 +279,34 @@ public class UserServiceImpl implements IUserService {
     public Map<String,UserEntity> getUserMap(){
         return userMap;
     }
+
+    public UserRole getUserRoleInfo(){
+        UserRole userRole = userDao.getUserRole();
+
+        return userRole;
+    }
+
+    /****
+    * @Description:
+     * 查询用户信息 根据提供的条件
+    * @Param: [username]
+    * @return: com.jiao.testproject.testproject.entity.UserEntity
+    * @Author: JRJ
+    * @Date: 2022/12/21
+    */
+
+    @Override
+    public UserEntity getByUsername(String username) {
+        UserEntity userEntity = new UserEntity();
+        userEntity.setUser_name(username);
+        UserEntity userByCondition = null;
+        try {
+             userByCondition = userDao.getUserByCondition(userEntity);
+        } catch (Exception e) {
+           log.info("line 305 ：error ====   "+ e );
+        }
+        return userByCondition;
+    }
+
+
 }
